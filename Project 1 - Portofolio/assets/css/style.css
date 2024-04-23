@@ -1,0 +1,164 @@
+/* Start of User Agent Reset */
+body,
+h1, 
+h2, 
+p, 
+ul{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* End of User Agent Reset */
+
+/* Utilities Classes */
+.highlight{
+    background-color: yellow;
+    color: black;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 5px;;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    font-size: 18px;
+    background-color: #fafafa;
+}
+
+header, footer{
+    background-color: #525293;
+    color: #fafafa;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+    padding: 20px 0;
+}
+
+header h1,
+header h2{
+    text-align: center;
+}
+
+nav{
+    padding-top: 20px;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline;
+}
+
+main{
+    max-width: 700px;
+    padding: 40px 0;
+    margin: auto;
+    
+}
+
+footer{
+    text-align: center;
+    font-size: 14px;
+}
+
+.section-title{
+    color: #525293;
+}
+
+section{
+    margin-bottom: 40px;
+}
+
+.separator-area{
+    background-color: #525293;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+.separator-area *{
+    color: #fafafa;
+}
+
+/* Form */
+
+.contact-form{
+    padding: 20px 0;
+}
+
+.contact-form *{
+    display: block;
+}
+
+.contact-form label{
+    font-weight: 500;
+    font-size: smaller;
+}
+
+.contact-form input,
+.contact-form textarea{
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.button-primary{
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid #525293;
+    color: #525293;
+    font-size: medium;
+}
+
+.button-primary:hover{
+    background-color: #525293;
+    border: 2px solid transparent;
+    color: #fafafafa;
+}
+
+.card{
+    display: inline-block;
+    border: 1px solid #525293;
+    border-radius: 10px;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 900px) {
+    .separator-area{
+        display: none;
+    }
+
+    .card{
+        width: calc(50% - calc(10px + 12px));
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .separator-area{
+        display: none;
+    }
+
+    .card{
+        width: calc(100% - calc(10px + 12px));
+    }
+}
+
+/* Flex */
+
+.card-container{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
